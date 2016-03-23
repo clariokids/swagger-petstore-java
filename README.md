@@ -64,7 +64,7 @@ import io.swagger.client.model.*;
 import io.swagger.client.api.PetApi;
 
 import java.io.File;
-import java.uitl.*;
+import java.util.*;
 
 public class PetApiExample {
 
