@@ -36,61 +36,30 @@ After the client library is installed/deployed, you can use it in your Maven pro
 Please follow the [installation](#installation) instruction and execute the following Java code:
 
 ```java
+
 // Import classes:
 //import io.swagger.client.ApiClient;
 //import io.swagger.client.ApiException;
 //import io.swagger.client.Configuration;
 //import io.swagger.client.auth.*;
-//import .;
+//import io.swagger.client.model.*;
+//import io.swagger.client.api.PetApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
-// Configure API key authorization: test_api_client_id
-ApiKeyAuth test_api_client_id = defaultClient.getAuthentication("test_api_client_id");
-test_api_client_id.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//test_api_client_id.setApiKeyPrefix("Token");
-
-// Configure API key authorization: test_api_client_secret
-ApiKeyAuth test_api_client_secret = defaultClient.getAuthentication("test_api_client_secret");
-test_api_client_secret.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//test_api_client_secret.setApiKeyPrefix("Token");
-
-// Configure API key authorization: api_key
-ApiKeyAuth api_key = defaultClient.getAuthentication("api_key");
-api_key.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//api_key.setApiKeyPrefix("Token");
-
-// Configure HTTP basic authorization: test_http_basic
-HttpBasicAuth test_http_basic = (HttpBasicAuth) defaultClient.getAuthentication("test_http_basic");
-test_http_basic.setUsername("YOUR USERNAME");
-test_http_basic.setPassword("YOUR PASSWORD");
-
-// Configure API key authorization: test_api_key_query
-ApiKeyAuth test_api_key_query = defaultClient.getAuthentication("test_api_key_query");
-test_api_key_query.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//test_api_key_query.setApiKeyPrefix("Token");
-
-// Configure API key authorization: test_api_key_header
-ApiKeyAuth test_api_key_header = defaultClient.getAuthentication("test_api_key_header");
-test_api_key_header.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//test_api_key_header.setApiKeyPrefix("Token");
-
- apiInstance = new ();
+PetApi apiInstance = new PetApi();
+Pet body = new Pet(); // Pet | Pet object that needs to be added to the store
 try {
-    apiInstance.();
+    apiInstance.addPet(body);
 } catch (ApiException e) {
-    System.err.println("Exception when calling #");
+    System.err.println("Exception when calling PetApi#addPet");
     e.printStackTrace();
 }
+
 ```
 
 ## Documentation for API Endpoints

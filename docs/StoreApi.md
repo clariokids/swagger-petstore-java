@@ -76,13 +76,13 @@ A single status value can be provided as a string
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure API key authorization: test_api_client_id
-ApiKeyAuth test_api_client_id = defaultClient.getAuthentication("test_api_client_id");
+ApiKeyAuth test_api_client_id = (ApiKeyAuth) defaultClient.getAuthentication("test_api_client_id");
 test_api_client_id.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //test_api_client_id.setApiKeyPrefix("Token");
 
 // Configure API key authorization: test_api_client_secret
-ApiKeyAuth test_api_client_secret = defaultClient.getAuthentication("test_api_client_secret");
+ApiKeyAuth test_api_client_secret = (ApiKeyAuth) defaultClient.getAuthentication("test_api_client_secret");
 test_api_client_secret.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //test_api_client_secret.setApiKeyPrefix("Token");
@@ -137,7 +137,7 @@ Returns a map of status codes to quantities
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure API key authorization: api_key
-ApiKeyAuth api_key = defaultClient.getAuthentication("api_key");
+ApiKeyAuth api_key = (ApiKeyAuth) defaultClient.getAuthentication("api_key");
 api_key.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.setApiKeyPrefix("Token");
@@ -188,7 +188,7 @@ Returns an arbitrary object which is actually a map of status codes to quantitie
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure API key authorization: api_key
-ApiKeyAuth api_key = defaultClient.getAuthentication("api_key");
+ApiKeyAuth api_key = (ApiKeyAuth) defaultClient.getAuthentication("api_key");
 api_key.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.setApiKeyPrefix("Token");
@@ -239,13 +239,13 @@ For valid response try integer IDs with value &lt;= 5 or &gt; 10. Other values w
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure API key authorization: test_api_key_query
-ApiKeyAuth test_api_key_query = defaultClient.getAuthentication("test_api_key_query");
+ApiKeyAuth test_api_key_query = (ApiKeyAuth) defaultClient.getAuthentication("test_api_key_query");
 test_api_key_query.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //test_api_key_query.setApiKeyPrefix("Token");
 
 // Configure API key authorization: test_api_key_header
-ApiKeyAuth test_api_key_header = defaultClient.getAuthentication("test_api_key_header");
+ApiKeyAuth test_api_key_header = (ApiKeyAuth) defaultClient.getAuthentication("test_api_key_header");
 test_api_key_header.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //test_api_key_header.setApiKeyPrefix("Token");
@@ -300,13 +300,13 @@ Place an order for a pet
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure API key authorization: test_api_client_id
-ApiKeyAuth test_api_client_id = defaultClient.getAuthentication("test_api_client_id");
+ApiKeyAuth test_api_client_id = (ApiKeyAuth) defaultClient.getAuthentication("test_api_client_id");
 test_api_client_id.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //test_api_client_id.setApiKeyPrefix("Token");
 
 // Configure API key authorization: test_api_client_secret
-ApiKeyAuth test_api_client_secret = defaultClient.getAuthentication("test_api_client_secret");
+ApiKeyAuth test_api_client_secret = (ApiKeyAuth) defaultClient.getAuthentication("test_api_client_secret");
 test_api_client_secret.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //test_api_client_secret.setApiKeyPrefix("Token");

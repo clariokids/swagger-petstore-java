@@ -37,7 +37,7 @@ Add a new pet to the store
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 PetApi apiInstance = new PetApi();
@@ -89,7 +89,7 @@ Fake endpoint to test byte array in body parameter for adding a new pet to the s
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 PetApi apiInstance = new PetApi();
@@ -141,11 +141,11 @@ Deletes a pet
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 PetApi apiInstance = new PetApi();
-Long petId = 789; // Long | Pet id to delete
+Long petId = 789L; // Long | Pet id to delete
 String apiKey = "apiKey_example"; // String | 
 try {
     apiInstance.deletePet(petId, apiKey);
@@ -195,7 +195,7 @@ Multiple status values can be provided with comma separated strings
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 PetApi apiInstance = new PetApi();
@@ -248,7 +248,7 @@ Muliple tags can be provided with comma seperated strings. Use tag1, tag2, tag3 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 PetApi apiInstance = new PetApi();
@@ -301,17 +301,17 @@ Returns a pet when ID &lt; 10.  ID &gt; 10 or nonintegers will simulate API erro
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: api_key
-ApiKeyAuth api_key = defaultClient.getAuthentication("api_key");
+ApiKeyAuth api_key = (ApiKeyAuth) defaultClient.getAuthentication("api_key");
 api_key.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.setApiKeyPrefix("Token");
 
 PetApi apiInstance = new PetApi();
-Long petId = 789; // Long | ID of pet that needs to be fetched
+Long petId = 789L; // Long | ID of pet that needs to be fetched
 try {
     Pet result = apiInstance.getPetById(petId);
     System.out.println(result);
@@ -360,17 +360,17 @@ Returns a pet when ID &lt; 10.  ID &gt; 10 or nonintegers will simulate API erro
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: api_key
-ApiKeyAuth api_key = defaultClient.getAuthentication("api_key");
+ApiKeyAuth api_key = (ApiKeyAuth) defaultClient.getAuthentication("api_key");
 api_key.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.setApiKeyPrefix("Token");
 
 PetApi apiInstance = new PetApi();
-Long petId = 789; // Long | ID of pet that needs to be fetched
+Long petId = 789L; // Long | ID of pet that needs to be fetched
 try {
     InlineResponse200 result = apiInstance.getPetByIdInObject(petId);
     System.out.println(result);
@@ -419,17 +419,17 @@ Returns a pet when ID &lt; 10.  ID &gt; 10 or nonintegers will simulate API erro
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: api_key
-ApiKeyAuth api_key = defaultClient.getAuthentication("api_key");
+ApiKeyAuth api_key = (ApiKeyAuth) defaultClient.getAuthentication("api_key");
 api_key.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.setApiKeyPrefix("Token");
 
 PetApi apiInstance = new PetApi();
-Long petId = 789; // Long | ID of pet that needs to be fetched
+Long petId = 789L; // Long | ID of pet that needs to be fetched
 try {
     byte[] result = apiInstance.petPetIdtestingByteArraytrueGet(petId);
     System.out.println(result);
@@ -478,7 +478,7 @@ Update an existing pet
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 PetApi apiInstance = new PetApi();
@@ -530,7 +530,7 @@ Updates a pet in the store with form data
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 PetApi apiInstance = new PetApi();
@@ -586,11 +586,11 @@ uploads an image
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 // Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = defaultClient.getAuthentication("petstore_auth");
+OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 PetApi apiInstance = new PetApi();
-Long petId = 789; // Long | ID of pet to update
+Long petId = 789L; // Long | ID of pet to update
 String additionalMetadata = "additionalMetadata_example"; // String | Additional data to pass to server
 File file = new File("/path/to/file.txt"); // File | file to upload
 try {
