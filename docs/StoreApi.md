@@ -102,7 +102,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **String**| Status value that needs to be considered for query | [optional] [default to placed][enum: placed, approved, delivered]
+ **status** | **String**| Status value that needs to be considered for query | [optional] [default to placed] [enum: placed, approved, delivered]
 
 ### Return type
 
