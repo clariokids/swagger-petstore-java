@@ -10,25 +10,25 @@ import io.swagger.annotations.ApiModelProperty;
 
 
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-03-29T17:45:39.546+08:00")
-public class SpecialModelName   {
+public class Animal   {
   
-  private Long specialPropertyName = null;
+  private String className = null;
 
   
   /**
    **/
-  public SpecialModelName specialPropertyName(Long specialPropertyName) {
-    this.specialPropertyName = specialPropertyName;
+  public Animal className(String className) {
+    this.className = className;
     return this;
   }
   
-  @ApiModelProperty(example = "null", value = "")
-  @JsonProperty("$special[property.name]")
-  public Long getSpecialPropertyName() {
-    return specialPropertyName;
+  @ApiModelProperty(example = "null", required = true, value = "")
+  @JsonProperty("className")
+  public String getClassName() {
+    return className;
   }
-  public void setSpecialPropertyName(Long specialPropertyName) {
-    this.specialPropertyName = specialPropertyName;
+  public void setClassName(String className) {
+    this.className = className;
   }
 
   
@@ -41,21 +41,21 @@ public class SpecialModelName   {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    SpecialModelName specialModelName = (SpecialModelName) o;
-    return Objects.equals(this.specialPropertyName, specialModelName.specialPropertyName);
+    Animal animal = (Animal) o;
+    return Objects.equals(this.className, animal.className);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(specialPropertyName);
+    return Objects.hash(className);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class SpecialModelName {\n");
+    sb.append("class Animal {\n");
     
-    sb.append("    specialPropertyName: ").append(toIndentedString(specialPropertyName)).append("\n");
+    sb.append("    className: ").append(toIndentedString(className)).append("\n");
     sb.append("}");
     return sb.toString();
   }
