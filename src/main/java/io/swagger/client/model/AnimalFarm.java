@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * AnimalFarm
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-06T18:30:11.039+08:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-06T18:33:59.931+08:00")
 public class AnimalFarm extends ArrayList<Animal>  {
   
 
