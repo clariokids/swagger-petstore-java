@@ -6,10 +6,10 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 
-
-
-
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-03-29T17:45:39.546+08:00")
+/**
+ * Category
+ */
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-06T18:30:11.039+08:00")
 public class Category   {
   
   private Long id = null;
@@ -32,7 +32,7 @@ public class Category   {
     this.id = id;
   }
 
-  
+
   /**
    **/
   public Category name(String name) {
@@ -49,7 +49,6 @@ public class Category   {
     this.name = name;
   }
 
-  
 
   @Override
   public boolean equals(java.lang.Object o) {

@@ -43,7 +43,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**User**](User.md)| Created user object | [optional]
+ **body** | [**User**](User.md)| Created user object |
 
 ### Return type
 
@@ -53,10 +53,10 @@ null (empty response body)
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/xml, application/json
 
 <a name="createUsersWithArrayInput"></a>
 # **createUsersWithArrayInput**
@@ -87,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**List&lt;User&gt;**](User.md)| List of user object | [optional]
+ **body** | [**List&lt;User&gt;**](User.md)| List of user object |
 
 ### Return type
 
@@ -97,10 +97,10 @@ null (empty response body)
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/xml, application/json
 
 <a name="createUsersWithListInput"></a>
 # **createUsersWithListInput**
@@ -131,7 +131,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**List&lt;User&gt;**](User.md)| List of user object | [optional]
+ **body** | [**List&lt;User&gt;**](User.md)| List of user object |
 
 ### Return type
 
@@ -141,10 +141,10 @@ null (empty response body)
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/xml, application/json
 
 <a name="deleteUser"></a>
 # **deleteUser**
@@ -157,18 +157,9 @@ This can only be done by the logged in user.
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
 //import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
 //import io.swagger.client.api.UserApi;
 
-ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure HTTP basic authorization: test_http_basic
-HttpBasicAuth test_http_basic = (HttpBasicAuth) defaultClient.getAuthentication("test_http_basic");
-test_http_basic.setUsername("YOUR USERNAME");
-test_http_basic.setPassword("YOUR PASSWORD");
 
 UserApi apiInstance = new UserApi();
 String username = "username_example"; // String | The name that needs to be deleted
@@ -192,12 +183,12 @@ null (empty response body)
 
 ### Authorization
 
-[test_http_basic](../README.md#test_http_basic)
+No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/xml, application/json
 
 <a name="getUserByName"></a>
 # **getUserByName**
@@ -215,7 +206,7 @@ Get user by user name
 
 
 UserApi apiInstance = new UserApi();
-String username = "username_example"; // String | The name that needs to be fetched. Use user1 for testing.
+String username = "username_example"; // String | The name that needs to be fetched. Use user1 for testing. 
 try {
     User result = apiInstance.getUserByName(username);
     System.out.println(result);
@@ -229,7 +220,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **String**| The name that needs to be fetched. Use user1 for testing. |
+ **username** | **String**| The name that needs to be fetched. Use user1 for testing.  |
 
 ### Return type
 
@@ -239,10 +230,10 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/xml, application/json
 
 <a name="loginUser"></a>
 # **loginUser**
@@ -275,8 +266,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **String**| The user name for login | [optional]
- **password** | **String**| The password for login in clear text | [optional]
+ **username** | **String**| The user name for login |
+ **password** | **String**| The password for login in clear text |
 
 ### Return type
 
@@ -286,10 +277,10 @@ Name | Type | Description  | Notes
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/xml, application/json
 
 <a name="logoutUser"></a>
 # **logoutUser**
@@ -326,10 +317,10 @@ null (empty response body)
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/xml, application/json
 
 <a name="updateUser"></a>
 # **updateUser**
@@ -362,7 +353,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **username** | **String**| name that need to be deleted |
- **body** | [**User**](User.md)| Updated user object | [optional]
+ **body** | [**User**](User.md)| Updated user object |
 
 ### Return type
 
@@ -372,8 +363,8 @@ null (empty response body)
 
 No authorization required
 
-### HTTP reuqest headers
+### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/xml, application/json
 
